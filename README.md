@@ -65,6 +65,7 @@ Back-end:
 - gifencoder - Helps us take the processed GIF frames and turn them back into smaller GIFs.
 - multer - Handles file uploads in our app, specifically for handling GIF files in memory.
 - cors - Allows our backend to accept requests from other origins, such as the frontend.
+
 Front-end:
 - react - A library for building interactive user interfaces, used here for the GIF upload form and displaying split GIFs.
 - axios - A tool for making HTTP requests from the frontend to the backend.
