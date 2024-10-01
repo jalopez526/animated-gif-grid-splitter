@@ -60,6 +60,10 @@
   margin-top: 20px;
 }
 
+.input-group label {
+  margin-right: 6px;;
+}
+
 .number-input {
   padding: 5px;
   border: 1px solid #ccc;
@@ -97,7 +101,6 @@ h3 {
 
 .grid {
   display: grid;
-  gap: 1px;
   width: 100%;
 }
 

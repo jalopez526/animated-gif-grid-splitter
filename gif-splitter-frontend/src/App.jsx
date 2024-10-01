@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import './App.css';
+const MAX_GRID_SIZE = 20;
 
 function App() {
   const [gifFile, setGifFile] = useState(null);
@@ -21,6 +22,12 @@ function App() {
       alert('Please select a GIF file.');
       return;
     }
+
+      // Validate grid size
+  if (n > MAX_GRID_SIZE || m > MAX_GRID_SIZE) {
+    alert(`Please use grid values smaller than or equal to ${MAX_GRID_SIZE}`);
+    return;
+  }
 
     const formData = new FormData();
     formData.append('gifFile', gifFile);
